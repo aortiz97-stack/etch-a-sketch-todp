@@ -14,3 +14,10 @@ div.master-container{
     padding-left: 325px;
     padding-right: 325px;
 }
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+
