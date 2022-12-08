@@ -20,11 +20,12 @@ const button = document.querySelector("button");
 function getDimension(e){
     if (e!==undefined){
         let answer = prompt("Please input number n to get a new nxn grid. Number must be less than 100.")
-
-        if (typeof parseInt(answer) !== "number"){
+        console.log(parseInt(answer));
+        if (typeof parseInt(answer) !== "number" || isNaN(answer)){
+            console.log("enterred")
             throw "Invalid input. You must provide a number."
         }
-        else if (typeof parseInt(answer) > 100){
+        else if (parseInt(answer) > 100){
             throw "Invalid input. Input must be less than or equal to 100."
         }
         else{
