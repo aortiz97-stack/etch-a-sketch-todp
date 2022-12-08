@@ -1,4 +1,12 @@
 .master-container div {
     background-color: red;
+    width: 6.25%;
+    height: 6.25%;
     
+}
+
+div.master-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
 }
