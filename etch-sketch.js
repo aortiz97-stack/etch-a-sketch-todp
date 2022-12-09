@@ -71,21 +71,11 @@ function getPadding(n){
     let sidePadding = 0.6 * deviceWidth;
     let borderWidth = n;
     let availableWidth = deviceWidth - sidePadding - borderWidth;
-    console.log(`deviceWidth: ${deviceWidth}`);
-    console.log(`sidePadding: ${sidePadding}`);
-    console.log(`availableWidth: ${availableWidth}`);
-    console.log(`______`);
 
     let deviceHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     let buttonDivHeight = document.querySelector("button").clientHeight;
     let bottomPadding = 0.3 * deviceWidth;
     let availableHeight = deviceHeight - buttonDivHeight - bottomPadding- borderWidth
-
-    console.log(`deviceHEIGHT: ${deviceHeight}`);
-    console.log(`buttonDivHEIGHT: ${buttonDivHeight}`);
-    console.log(`bottomPadding: ${bottomPadding}`);
-    console.log(`availableHeight: ${availableHeight}`);
-    console.log(`______`);
 
     const deviceDimension = Math.max(availableHeight, availableWidth);
     console.log(`deviceDimension: ${deviceDimension}`);
