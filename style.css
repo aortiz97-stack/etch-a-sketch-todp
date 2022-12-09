@@ -1,18 +1,20 @@
 .master-container div {
     border: 0.5px solid black;
-    padding: 3%;
+    padding: 14.25px;
     width: 0.03 vw;
     height: 0.03 vw;
+    /*flex: 0 0 0%;*/
     
 }
 
 div.master-container{
     display: flex;
     flex-wrap: wrap;
+    /*align-items: center;*/
     padding-top: 50px;
-    padding-bottom: 325px;
-    padding-left: 325px;
-    padding-right: 325px;
+    padding-bottom: 30vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
 }
 
 .button-container{
