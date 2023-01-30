@@ -49,10 +49,7 @@ function createNewGrid(e){
             masterContainer.appendChild(grid);
             count ++;
         }
-        //Set padding of grid squares
-        let gridPadding = getPadding(dimension).toString() +"px";
         const nestedDivs = document.querySelectorAll(".master-container div");
-        nestedDivs.forEach((div)=>{div.style.padding = gridPadding; console.log(div.style.padding)});
 
 
         //Change color of squares
