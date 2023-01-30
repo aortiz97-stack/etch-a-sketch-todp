@@ -74,9 +74,16 @@ function getPadding(n){
     let bottomPadding = 0.3 * deviceWidth;
     let availableHeight = deviceHeight - buttonDivHeight - bottomPadding- borderWidth
 
-    const deviceDimension = Math.max(availableHeight, availableWidth);
-    console.log(`deviceDimension: ${deviceDimension}`);
-   
-    return deviceDimension/(n*2);
+    let availableTotalArea = availableHeight * availableWidth;
+    let deviceArea = deviceWidth * deviceHeight;
+
+    let gridArea = availableTotalArea/n
+
+
+
+    return gridArea/deviceArea * 200;
+    
 }
+
+console.log(getPadding(16));
 

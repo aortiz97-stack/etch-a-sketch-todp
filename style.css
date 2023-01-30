@@ -1,11 +1,11 @@
 .master-container div {
     border: 0.5px solid black;
-    padding: 3%;
+    padding: 2.54%;
     
 }
 
 div.master-container{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 30vw;
